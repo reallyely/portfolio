@@ -1,43 +1,40 @@
+@use './vars.module';
+@use './cray.scss';
+@use '../public/fonts/fonts.scss';
+
 .container {
+  background: #5e5062;
+  background: radial-gradient(ellipse at top left, #58877fA5 0%, #5e5062A5 47%), url("/winter-pooter.png") no-repeat top center fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  color: vars.$off-white
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
 .title {
+  font-family: ibm;
+  font-weight: 500;
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  // text-shadow: 1px 1px vars.$hot-orange;
 }
 
 .description {
   line-height: 1.5;
+  color: #eb1ac8;
   font-size: 1.5rem;
 }
 
 .grid {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   flex-wrap: wrap;
 
   max-width: 800px;
@@ -84,4 +81,14 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.test {
+  color: pink
+}
+
+pre.ibm {
+  padding:0;
+  margin:0;
+  font-family: ibm;
 }

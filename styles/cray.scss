@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Cotta;
+  src: url("../public/fonts/cotta.otf") format("OpenType");
+}
+
+@font-face {
+  font-family: CabinetGrotesk;
+  src: url("../public/fonts/CabinetGrotesk-Variable.woff2") format("WOFF 2.0");
+}
+
+@font-face {
+  font-family: Maghfirea;
+  src: url("../public/fonts/Maghfirea.ttf") format("TrueType")
+}
+@font-face {
+  font-family: Branch;
+  src: url("../public/fonts/branch.ttf") format("TrueType")
+}
+$steps: 20;
+
+@keyframes crayAnimation {
+  @for $i from 1 to $steps {
+    $per: 100% / $steps * $i;
+    $weight: (100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700);
+    $style: (normal,
+      italic,
+      normal,
+      normal);
+    $decor: (none,
+      none,
+      line-through,
+      none,
+      none,
+      underline,
+      none);
+    $trans: (none,
+      none,
+      uppercase,
+      lowercase,
+      capitalize,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none);
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+$arrayF: random(2);
+
+    #{$per} {
+      // font-family: nth((Branch, CabinetGrotesk, Maghfirea), $arrayF);
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
+}

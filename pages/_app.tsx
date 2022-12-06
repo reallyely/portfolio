@@ -1,13 +1,16 @@
-import '@/styles/global.css'
+import "@/styles/global.css";
 
-import type { AppProps } from 'next/app'
-import MainLayout from 'layout/main-layout'
+import { AnimatePresence } from "framer-motion";
+import type { AppProps } from "next/app";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <MainLayout>
+    <AnimatePresence
+      exitBeforeEnter
+      initial={false}
+      onExitComplete={() => window.scrollTo(0, 0)}
+    >
       <Component {...pageProps} />
-    </MainLayout>
-  )
-
+    </AnimatePresence>
+  );
 }

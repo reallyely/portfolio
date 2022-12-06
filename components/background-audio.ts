@@ -14,7 +14,7 @@ export class BackgroundAudio {
   public async loadSource() {
     const response = await fetch(new Request(this.clip))
     if (!response.ok) {
-      console.log("Couldn't get the background audio")
+      console.error("Couldn't get the background audio")
       return this
     } else {
       const buffer = await response.arrayBuffer()
@@ -26,7 +26,6 @@ export class BackgroundAudio {
   }
   public play() {
     if (this.isPlaying) return this
-
     this.source.start(0)
     this.isPlaying = true
     return this

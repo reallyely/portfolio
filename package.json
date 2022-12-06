@@ -12,6 +12,7 @@
     "@mdx-js/react": "^2.1.5",
     "@next/font": "^13.0.4",
     "@next/mdx": "^13.0.5",
+    "framer-motion": "^7.6.15",
     "next": "latest",
     "nextra": "^1.1.0",
     "react": "^18.2.0",

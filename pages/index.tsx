@@ -1,11 +1,11 @@
+import MainLayout from "layout/main-layout";
 import { PropsWithChildren } from "react";
-
-interface HomeProps { }
+import { Splash } from "@/components/splash";
+interface HomeProps {}
 export default function Home({ children }: PropsWithChildren<HomeProps>) {
   return (
-    <div>
-      home
-    </div >
-
-  )
+    <MainLayout>
+      <Splash />
+    </MainLayout>
+  );
 }

@@ -1,0 +1,10 @@
+.nav {
+  margin: 1em;
+  display: "flex";
+  flex-direction: row;
+  background: transparent;
+}
+
+.nav .item {
+  margin-left: 1em;
+}

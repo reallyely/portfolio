@@ -2,15 +2,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: CabinetGrotesk
+  font-family: CabinetGrotesk;
+  font-size: 1.2em;
+  /* background: url("/winter-pooter.png") no-repeat top center fixed; */
+  color: white;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: Cotta
+}
 * {
   box-sizing: border-box;
 }
-
+pre {
+  font-family: ibm;
+}
 main {
-  padding: 5rem 0;
+  /* padding: 5rem 0;  */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -39,7 +46,7 @@ footer a {
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 code {

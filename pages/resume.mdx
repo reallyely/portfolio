@@ -1,78 +1,98 @@
+import MainLayout from "layout/main-layout";
+
 # Stephen Ely
 
+## Senior Software Engineer
+
+[stephen.a.ely@gmail.com](mailto:stephen.a.ely@gmail.com) • (304) 839-3516 • https://stephen.elys.dev
+
+## Skills
+
+- **Front End UI Development**: TypeScript, NodeJS, SPAs, SASS, Polymer, AngularJS, (P)React
+- **Backend Microservices**: SpringBoot Java, REST, Postgresql, OAuth 2.0
+- **AWS Cloud**: STS, EKS, Secrets Manager, ECR
+- **12 Factor Apps**: Git, GitHub, AWS, Docker, Kubernetes, Helm, ArgoCD, Skaffold
+- **Layered Testing**: Storybook, Playwright, Jest, Mocha, JUnit
+- **Security & Observability**: Splunk, SignalFX, FullStory, ESLint, Whitesource, Rapid7, SonarQube
+- **CI/CD**: Jenkins, GitHub Actions, Artifactory, Docker, Kubernetes, Helm, ArgoCD
+
+## Experience
+
 ### Senior Software Engineer
 
-[stephen.a.ely@gmail.com](mailto:stephen.a.ely@gmail.com) • (304) 839-3516 • github.com/reallyely
+`2019 - Present : GE Digital - Roanoke, VA`
 
-### Skills
-
--   Front End UI Development:  TypeScript, NodeJS, SPAs, SASS, Polymer, AngularJS, (P)React
--   Backend Microservices: SpringBoot Java, REST, Postgresql, OAuth 2.0
--   AWS Cloud: STS, EKS, Secrets Manager, ECR
--   12 Factor Apps: Git, GitHub, AWS, Docker, Kubernetes, Helm, ArgoCD, Skaffold
--   Layered Testing: Storybook, Playwright, Jest, Mocha, JUnit
--   Security & Observability: Splunk, SignalFX, FullStory, ESLint, Whitesource, Rapid7, SonarQube
--   CI/CD: Jenkins, GitHub Actions, Artifactory, Docker, Kubernetes, Helm, ArgoCD
-
-### Experience
-
-### Senior Software Engineer
-
-2019 – Present : GE Digital – Roanoke, VA
-
--   Lead a team in delivering a central Micro Frontend gateway application used by distributed feature teams for session management, server-side UI Composition and multi-tenancy
--   Improved availability from ~ 97% to > 99.8% over 8 months by increasing testing and deployment cadence, containerizing the application and adding observability and alerts
--   Delivered quality UI by collaborating with UX Designers, Product Owners and feature teams for quality, accessible, delightful UI
--   Streamlined app delivery by implementing GitOps CI/CD and reducing the number of environments–increased delivery rate from once per year to every two weeks
--   Containerized microservices stack to enable faster, more reliable delivery and scaling in k8s
--   Improved security by collaborating with Cyber Security teams, introducing Static and Dynamic code analysis, linters and quality gates to reduce critical security vulnerabilities
--   Raised organizational standards by participating in the Security Guild, Agile Guild, and Ombuds program by evangelizing practices to improve quality, consistency and respect in the workplace
+- **Led a team** in delivering a central Micro Frontend gateway application used by distributed feature teams for session management, server-side UI Composition and multi-tenancy
+- **Improved availability** from ~ 97% to > 99.8% over 8 months by increasing testing and deployment cadence, containerizing the application and adding observability and alerts
+- **Delivered quality UI** by collaborating with UX Designers, Product Owners and feature teams for quality, accessible, delightful UI
+- **Streamlined app delivery** by implementing GitOps CI/CD and reducing the number of environments-increased delivery rate from once per year to every two weeks
+- **Containerized microservices** stack to enable faster, more reliable delivery and scaling in k8s
+- **Improved security** by collaborating with Cyber Security teams, introducing Static and Dynamic code analysis, linters and quality gates to reduce critical security vulnerabilities
+- **Raised organizational standards** by participating in the Security Guild, Agile Guild, and Ombuds program by evangelizing practices to improve quality, consistency and respect in the workplace
 
 ### UI Software Engineer
 
-2017 – 2019: GE Digital – Roanoke, VA
+`2017 - 2019: GE Digital - Roanoke, VA`
 
--   Lead a global team of 8 in adopting a third party service into our cloud based microservice framework for advanced dashboarding and data aggregation
--   Created UI Components and widgets for use in a dynamic dashboarding Web Application
+- Lead a global team of 8 in adopting a third party service into our cloud based microservice framework for advanced dashboarding and data aggregation
+- Created UI Components and widgets for use in a dynamic dashboarding Web Application
 
 ### Software Engineer I
 
-2015 – 2017 : Public Consulting Group - Blacksburg, VA
+`2015 - 2017 : Public Consulting Group - Blacksburg, VA`
 
--   Contributed UX while on the UI Design Board for developing the next iteration of the app’s UI
--   Developed user interfaces using raw HTML, CSS, JS, XML and Perl for server side composition
+- Contributed UX while on the UI Design Board for developing the next iteration of the app's UI
+- Developed user interfaces using raw HTML, CSS, JS, XML and Perl for server side composition
 
-### Network Infrastructure Technician - SharePoint Developer        
+### Network Infrastructure Technician - SharePoint Developer
 
- 2008 – 2014 : 167th Air National Guard – Martinsburg, WV
+`2008 - 2014 : 167th Air National Guard - Martinsburg, WV`
 
 ### Education
 
-### Bachelor of Science: Information Technology
+#### Bachelor of Science: Information Technology
 
-2015 : American Military University – Charlestown, WV
+`2015 : American Military University - Charlestown, WV`
 
 Relational Database Concepts • Web Development • LAN Technologies • Information Security • Project Management • HTML • CSS • JavaScript • Java • Adobe Flash
 
-### Network Infrastructure Systems
+#### Network Infrastructure Systems
 
-2008 : Keesler Air Force base – Biloxi, MS
+`2008 : Keesler Air Force base - Biloxi, MS`
 
 Top Graduate • Cisco Switches & Routers • Multiplexers & ATMs • Linux Red Hat • Windows Server
 
-### Graphic Design
+#### Graphic Design
 
-2003 : James Rumsey Technical School – Hedgesville, WV
+`2003 : James Rumsey Technical School - Hedgesville, WV`
 
 Adobe Photoshop • Adobe Illustrator • Blender • Traditional Media • Product Design • Interface Design
 
 ### Military Service
 
-### National Guard : Air Force – E6
+#### National Guard : Air Force - E6
 
-2005 - Present : 167th Airlift Wing – Martinsburg, WV
+`2005 - Present : 167th Airlift Wing - Martinsburg, WV`
 
--   2013 : Awarded Air Force Achievement medal for contributions to an efficient, customer focused NCC
--   2012 : Awarded top award in a wing inspection for the proactive migration of paper-based practices to the web
--   2008 : Top Graduate from Network Infrastructure Systems technical school
--   Active Secret Clearance
+- 2013 : Awarded Air Force Achievement medal for contributions to an efficient, customer focused NCC
+- 2012 : Awarded top award in a wing inspection for the proactive migration of paper-based practices to the web
+- 2008 : Top Graduate from Network Infrastructure Systems technical school
+- Active Secret Clearance
+
+export default ({ children }) => (
+  <MainLayout>
+    <div
+      style={{
+        backdropFilter: "blur(5px)",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginLeft: "1em",
+        marginRight: "1em",
+      }}
+    >
+      {children}
+    </div>
+  </MainLayout>
+);
